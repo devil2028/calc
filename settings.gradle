@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='MyKotlin'
+rootProject.name='SmartCalc'

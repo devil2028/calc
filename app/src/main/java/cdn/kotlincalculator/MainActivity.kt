@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        Api35Utils.applySystemBarInsets(this, true, true, true, null)
+
         // Numbers
         binding.num0.setOnClickListener {
             Toast.makeText(this, "0 clicked", Toast.LENGTH_SHORT).show()
