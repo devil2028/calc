@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button Dimensions -->
+    <dimen name="button_corner_radius">12dp</dimen>
+    <dimen name="button_elevation">4dp</dimen>
+    <dimen name="button_elevation_operator">6dp</dimen>
+    <dimen name="button_elevation_equals">8dp</dimen>
+    <dimen name="button_margin">4dp</dimen>
+    
+    <!-- Display Dimensions -->
+    <dimen name="display_corner_radius">16dp</dimen>
+    <dimen name="display_elevation">8dp</dimen>
+    <dimen name="display_padding">24dp</dimen>
+    
+    <!-- Layout Dimensions -->
+    <dimen name="layout_margin">16dp</dimen>
+    <dimen name="layout_margin_small">8dp</dimen>
+    <dimen name="layout_margin_large">24dp</dimen>
+    
+    <!-- Text Sizes -->
+    <dimen name="text_size_display_expression">28sp</dimen>
+    <dimen name="text_size_display_result">42sp</dimen>
+    <dimen name="text_size_button_number">24sp</dimen>
+    <dimen name="text_size_button_operator">24sp</dimen>
+    <dimen name="text_size_button_function">20sp</dimen>
+    <dimen name="text_size_button_equals">28sp</dimen>
+    
+    <!-- Animation Durations -->
+    <integer name="animation_duration_short">150</integer>
+    <integer name="animation_duration_medium">200</integer>
+    <integer name="animation_duration_long">300</integer>
+</resources>

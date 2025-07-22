@@ -1,37 +1,78 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="ActionButtonStyle">
+    <!-- Modern Material Button Styles -->
+    <style name="BaseButtonStyle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@color/colorPrimary</item>
-        <item name="android:layout_margin">0.50dp</item>
+        <item name="android:elevation">4dp</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="NumberButtonStyle">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:background">@color/grey</item>
-        <item name="android:layout_margin">0.50dp</item>
-        <item name="android:clickable">true</item>
-        <item name="android:focusable">true</item>
+    <style name="NumberButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_number_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
+
+    <style name="OperatorButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_operator_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="FunctionButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_function_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="EqualsButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_equals_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ClearButtonStyle" parent="BaseButtonStyle">
+        <item name="android:background">@drawable/button_clear_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Display Text Styles -->
+    <style name="DisplayExpressionStyle">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <style name="DisplayResultStyle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">start</item>
+    </style>
+
+    <!-- Legacy styles for compatibility -->
+    <style name="ActionButtonStyle" parent="OperatorButtonStyle" />
 
 </resources>

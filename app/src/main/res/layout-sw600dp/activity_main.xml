@@ -4,29 +4,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_primary"
-    android:padding="16dp">
+    android:padding="24dp">
 
-    <!-- Display Area with CardView -->
+    <!-- Display Area with CardView for Tablets -->
     <androidx.cardview.widget.CardView
         android:id="@+id/displayCard"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="48dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
         app:cardBackgroundColor="@android:color/transparent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.28">
+        app:layout_constraintHeight_percent="0.32">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/display_background_gradient"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="32dp">
 
             <TextView
                 android:id="@+id/placeholder"
@@ -34,6 +34,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 style="@style/DisplayExpressionStyle"
+                android:textSize="36sp"
                 android:text="" />
 
             <TextView
@@ -41,17 +42,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                style="@style/DisplayResultStyle" />
+                style="@style/DisplayResultStyle"
+                android:textSize="56sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Button Grid Area -->
+    <!-- Button Grid Area for Tablets -->
     <LinearLayout
         android:id="@+id/buttonGrid"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="60dp"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@id/displayCard"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,21 +70,29 @@
             <TextView
                 android:id="@+id/clear"
                 style="@style/ClearButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="24sp"
                 android:text="CE" />
 
             <TextView
                 android:id="@+id/startBracket"
                 style="@style/FunctionButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="24sp"
                 android:text="(" />
 
             <TextView
                 android:id="@+id/closeBracket"
                 style="@style/FunctionButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="24sp"
                 android:text=")" />
 
             <TextView
                 android:id="@+id/actionDivide"
                 style="@style/OperatorButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="÷" />
 
         </LinearLayout>
@@ -97,21 +107,29 @@
             <TextView
                 android:id="@+id/num7"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="7" />
 
             <TextView
                 android:id="@+id/num8"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="8" />
 
             <TextView
                 android:id="@+id/num9"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="9" />
 
             <TextView
                 android:id="@+id/actionMultiply"
                 style="@style/OperatorButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="×" />
 
         </LinearLayout>
@@ -126,21 +144,29 @@
             <TextView
                 android:id="@+id/num4"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="4" />
 
             <TextView
                 android:id="@+id/num5"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="5" />
 
             <TextView
                 android:id="@+id/num6"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="6" />
 
             <TextView
                 android:id="@+id/actionMinus"
                 style="@style/OperatorButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="−" />
 
         </LinearLayout>
@@ -155,21 +181,29 @@
             <TextView
                 android:id="@+id/num1"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="1" />
 
             <TextView
                 android:id="@+id/num2"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="2" />
 
             <TextView
                 android:id="@+id/num3"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="3" />
 
             <TextView
                 android:id="@+id/actionAdd"
                 style="@style/OperatorButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="+" />
 
         </LinearLayout>
@@ -184,21 +218,29 @@
             <TextView
                 android:id="@+id/numDot"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="." />
 
             <TextView
                 android:id="@+id/num0"
                 style="@style/NumberButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="28sp"
                 android:text="0" />
 
             <TextView
                 android:id="@+id/actionBack"
                 style="@style/FunctionButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="24sp"
                 android:text="⌫" />
 
             <TextView
                 android:id="@+id/actionEquals"
                 style="@style/EqualsButtonStyle"
+                android:layout_margin="6dp"
+                android:textSize="32sp"
                 android:text="=" />
 
         </LinearLayout>
